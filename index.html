@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA Student Survey</title>
+</head>
+<body>
+    <h1>App Academy Student Survey Form</h1>
+
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+            <div>
+                <label>Status</label>
+                <select id="status" name="user_status_name">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+                
+            <div>
+                <p>Choose your favorite programming language:</p>
+            </div>
+
+            <div>
+                <input type="radio" id="html" name="programming_language" value="html">
+                <label for="html">HTML</label>
+            </div>
+
+            <div>
+                <input type="radio" id="css" name="programming_language" value="css">
+                <label for="css">CSS</label>
+            </div>
+
+            <div>
+                <input type="radio" id="javaScript" name="programming_language" value="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div>
+                <label for="current_date">Current date:</label>
+                <input type="date" id="current_date" name="current_date">
+            </div>
+
+            <div>
+                <input type="checkbox" id="newsletter_signup" name="newsletter_signup" >
+                <label for="newsletter_signup">Signup for newsletter</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Agree to terms and conditions </label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
